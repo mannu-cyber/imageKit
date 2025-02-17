@@ -17,7 +17,7 @@ const postImage = async (req, res) => {
       folder: "/imagekit_upload"
     })
 
-    // fs.unlink(req.file.path)
+    fs.unlink(req.file.path)
 
     const image = new Uploads({
       url: result.url,
